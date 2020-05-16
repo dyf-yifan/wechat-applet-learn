@@ -1,0 +1,10 @@
+/* pages/index_detail/index_detail.wxss */
+.card {
+    width: 90%;
+    margin: 10px 10px 0 10px;
+    height: 100px;
+    border-radius: 2px;
+    box-shadow: beige;
+    -webkit-box-shadow: 4px 2px 6px #DCDCDC;
+    -moz-box-shadow: 3px 2px 6px #DCDCDC;
+}

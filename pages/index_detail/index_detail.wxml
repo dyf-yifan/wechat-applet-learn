@@ -1,0 +1,7 @@
+<!-- pages/index_detail/index_detail.wxml -->
+<view class="card">
+<view>
+    <text>类别：{{item.name}}</text>
+</view>
+<text>内容：{{item.content}}</text>
+</view>

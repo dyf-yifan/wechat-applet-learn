@@ -1,0 +1,2 @@
+<!--pages/tnree/three.wxml-->
+<button bindtap="onTap" data-items='{{item}}'>点击这个按钮将触发“eventTap”事件</button>

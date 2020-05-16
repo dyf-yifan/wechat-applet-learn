@@ -1,0 +1,2 @@
+<!-- pages/two/two.wxml -->
+<button>接收父组件值： {{content}}</button>

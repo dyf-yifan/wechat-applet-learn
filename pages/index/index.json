@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "one": "/pages/one/one",
+    "two": "/pages/two/two",
+    "three": "/pages/three/three",
+    "four": "/pages/four/four"
+  }
+}

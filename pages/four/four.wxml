@@ -1,0 +1,2 @@
+<!-- pages/four/four.wxml -->
+<button bindtap="onTap">点击这个按钮将触发“eventTap”事件</button>

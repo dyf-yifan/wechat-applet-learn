@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="page-body">
+        <view class="page-section page-section-spacing">
+            <view class="text-box" scroll-y="true" scroll-top="{{scrollTop}}">
+                <text>{{text}}</text>
+            </view>
+            <button disabled="{{!canAdd}}" bindtap="add">add line</button>
+            <button disabled="{{!canRemove}}" bindtap="remove">remove line</button>
+        </view>
+    </view>
+    <block wx:for="{{texts}}" wx:for-item="item">
+        <view class="text">
+            <text bindtap="onMyEvent" data-item="{{item}}">分类                                   {{item.name}}
+            </text>
+        </view>
+    </block>
+</view>

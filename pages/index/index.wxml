@@ -1,0 +1,66 @@
+<!-- index.wxml -->
+<view class="container">
+  <button type='primary' bindtap='send'>请求数据</button>
+  <view wx:for="{{list}}" wx:key="index">id:{{item.id}}</view>
+  <!-- 导航跳转 -->
+  <view class="d-nav" bindtap="toDetail" data-item="text">
+    <button>text</button>
+  </view>
+  <view class="d-nav" bindtap="toDetail" data-item="logs">
+    <button>logs</button>
+  </view>
+  <!-- <view class="d-index-box mar" v-for="(item, index) in listData" :key="index">
+			<view class="d-index-box-l nowrap group-row-between">
+				<view class="d-nick-l nowrap group-row-simple">
+					<image :src="item.avatar" mode="" class="d-nick"></image>
+					<view class="d-text group-row-simple">
+						<text class="d-text-color">{{ item.nickname }}</text>
+					</view>
+				</view>
+				<view @click="goDetail(item)" :id="key"><dn-icon type="tiaozhuan" size="17" color="#696969"></dn-icon></view>
+			</view>
+			<view class="d-index-box-title" @click="goDetail(item)" :id="key">
+				<text>{{ item.title }}</text>
+			</view>
+			<view class="d-content"><view v-html="item.content" class="d-content-l"></view></view>
+		</view> -->
+  <!-- 引用组件 -->
+  <!-- <one inner-text="微信小程序"></one>
+  <two content="今天想吃什么？"></two>
+  <three dataSource="{{three}}" bind:eventTap="executeTap"></three>
+  <four id="four" dataSource="{{four}}"></four> -->
+  <!-- todolist -->
+  <!-- <view class="titleBar">
+    <view class="status">
+      <text class="{{status === '1'?'active':''}}" data-status="1" bindtap="showStatus">全部</text>
+      <text class="{{status === '2'?'active':''}}" data-status="2" bindtap="showStatus">未完成</text>
+      <text class="{{status === '3'?'active':''}}" data-status="3" bindtap="showStatus">已完成</text>
+    </view>
+  </view>
+  <scroll-view class="lists" scroll-y>
+    <block wx:if="{{curLists.length < 1}}">
+      <view class="nodata">暂无数据</view>
+    </block>
+    <view class="item" wx:for="{{curLists}}" wx:key="index">
+      <view class="content" style="{{item.txtStyle}}" data-index="{{index}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE">
+        <icon class="icon-small" type="{{item.status === '0'?'circle':'success'}}" size="23" data-item="{{item.id}}" bindtap="changeTodo"></icon>
+        <text class="title {{item.status === '1'?'over':''}}">{{item.title}}</text>
+        <text class="time">{{api.formatTime(item.id)}}</text>
+      </view>
+      <view class="del" data-item="{{item.id}}" bindtap="delTodo">
+        <text>删除</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="addForm {{addShow?'':'hide'}}">
+    <view class="addForm-div">
+      <input class="weui-input" placeholder="请输入todo" value="{{addText}}" bindinput="setInput" focus="{{focus}}" />
+      <view class="addForm-btn">
+        <button class="weui-btn mini-btn" type="warn" bindtap="addTodo" size="mini">确定添加</button>
+        <button class="weui-btn mini-btn" type="default" bindtap="addTodoHide" size="mini">
+          取消
+        </button>
+      </view>
+    </view>
+  </view> -->
+</view>
