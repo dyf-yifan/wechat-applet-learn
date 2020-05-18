@@ -1,14 +1,162 @@
 <!-- index.wxml -->
-<view class="container">
+<view class="d-top">
+  <view class="d-img">
+    <cover-image class="d-imgl" src="/assert/defaule_image.jpg" bindload=""
+      binderror="">
+    </cover-image>
+  </view>
+  <view class="d-title">
+    当前门店某某路
+  </view>
+  <view class="d-icon">
+    <cover-image class="d-iconl" src="/assert/dingwei.png" bindload=""
+      binderror="">
+    </cover-image>
+  </view>
+</view>
+
+<view class="d-swiper">
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000"
+    duration="1000">
+    <block wx:for="{{movies}}" wx:for-index="index">
+      <swiper-item>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="d-my">
+    <view class="d-my-left">
+      <cover-image class="d-img-my" src="/assert/defaule_image.jpg" bindload=""
+        binderror="">
+      </cover-image>
+    </view>
+    <view class="d-my-right">
+      <view class="d-my-right-top">
+        <view class="d-my-right-name">
+          某某
+        </view>
+        <view class="d-my-right-name-l">
+          普通会员
+        </view>
+      </view>
+      <view class="d-my-right-bottom">
+        <text class="d-text" selectable="false" space="false" decode="false">
+          积分:0
+        </text>
+        <text class="d-text" selectable="false" space="false" decode="false">
+          卡包:0
+        </text>
+        <text class="d-text" selectable="false" space="false" decode="false">
+          账单:查看
+        </text>
+      </view>
+    </view>
+    <cover-image class="d-my-rightl" src="/assert/erweima.png" bindload=""
+      binderror="">
+    </cover-image>
+  </view>
+  <!-- 优惠专区 -->
+  <view class="d-youhui">
+    <text>优惠专区</text>
+  </view>
+  <view class="d-card">
+    <view class="d-youhui-card">
+      <cover-image class="d-yh-img" src="/assert/bing.png" bindload=""
+        binderror="">
+      </cover-image>
+      <text class="d-bing">冰淇凌5折尝鲜券1</text>
+      <button class="d-button">立抢</button>
+    </view>
+    <view class="d-youhui-card">
+      <cover-image class="d-yh-img" src="/assert/bing.png" bindload=""
+        binderror="">
+      </cover-image> <text class="d-bing">冰淇凌5折尝鲜券2</text>
+      <button class="d-button">立抢</button>
+    </view>
+    <view class="d-youhui-card">
+      <cover-image class="d-yh-img" src="/assert/bing.png" bindload=""
+        binderror="">
+      </cover-image>
+      <text class="d-bing">冰淇凌5折尝鲜券3</text>
+      <button class="d-buttonl">已抢完</button>
+    </view>
+  </view>
+  <!-- 精选专区 -->
+  <view class="d-youhui">
+    <text>精选专区</text>
+  </view>
+  <view class="d-jingxuan">
+    <view class="d-jingxuan-top">
+      <cover-image class="d-jx-img" src="/assert/linpin.png" bindload=""
+        binderror="">
+      </cover-image>
+      <cover-image class="d-jx-img" src="/assert/huanle.png" bindload=""
+        binderror="">
+      </cover-image>
+    </view>
+    <view class="d-jingxuan-bottom">
+      <view class="d-jx-card">
+        <view class="d-jx-card-left">
+          <text class="d-jx-card-name">游戏</text>
+          <text class="d-jx-card-content">玩游戏得优惠</text>
+        </view>
+        <view class="d-jx-card-right">
+          <cover-image class="d-jx-icon" src="/assert/youxi.png" bindload=""
+            binderror="">
+          </cover-image>
+        </view>
+      </view>
+      <view class="d-jx-card">
+        <view class="d-jx-card-left">
+          <text class="d-jx-card-name">甄会选</text>
+          <text class="d-jx-card-content">优质好货</text>
+        </view>
+        <view class="d-jx-card-right">
+          <cover-image class="d-jx-icon" src="/assert/zhen.png" bindload=""
+            binderror="">
+          </cover-image>
+        </view>
+      </view>
+      <view class="d-jx-card">
+        <view class="d-jx-card-left">
+          <text class="d-jx-card-name">吉祥物</text>
+          <text class="d-jx-card-content">领养萌宠</text>
+        </view>
+        <view class="d-jx-card-right">
+          <cover-image class="d-jx-icon" src="/assert/qixiangwu.png" bindload=""
+            binderror="">
+          </cover-image>
+        </view>
+      </view>
+      <view class="d-jx-card">
+        <view class="d-jx-card-left">
+          <text class="d-jx-card-name">外卖</text>
+          <text class="d-jx-card-content">一起嗨翻天</text>
+        </view>
+        <view class="d-jx-card-right">
+          <cover-image class="d-jx-icon" src="/assert/waimai.png" bindload=""
+            binderror="">
+          </cover-image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <text class="d-bottom">敬请期待~~</text>
+
+  <!--   
   <button type='primary' bindtap='send'>请求数据</button>
+
+
   <view wx:for="{{list}}" wx:key="index">id:{{item.id}}</view>
-  <!-- 导航跳转 -->
+  导航跳转 
   <view class="d-nav" bindtap="toDetail" data-item="text">
     <button>text</button>
   </view>
   <view class="d-nav" bindtap="toDetail" data-item="logs">
     <button>logs</button>
-  </view>
+  </view> -->
   <!-- <view class="d-index-box mar" v-for="(item, index) in listData" :key="index">
 			<view class="d-index-box-l nowrap group-row-between">
 				<view class="d-nick-l nowrap group-row-simple">
@@ -63,4 +211,3 @@
       </view>
     </view>
   </view> -->
-</view>

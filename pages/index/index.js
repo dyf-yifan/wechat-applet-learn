@@ -15,7 +15,20 @@ Page({
     editIndex: 0,
     delBtnWidth: 120, // 删除按钮宽度单位（rpx）
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    list: []
+    list: [],
+    movies: [{
+        url: '/assert/bing.png'
+      },
+      {
+        url: '/assert/erweima.png'
+      },
+      {
+        url: '/assert/erweima.png'
+      },
+      {
+        url: '/assert/erweima.png'
+      }
+    ]
   },
   //事件处理函数
   bindViewTap: function () {
